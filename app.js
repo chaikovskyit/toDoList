@@ -2,7 +2,6 @@ const input = document.querySelector('.input')
 const button = document.querySelector('.btn')
 const blockList = document.querySelector('.tasks')
 
-
 function pushElement(text){
     const newElement = document.createElement('li')
     const deleteBatton = document.createElement('button')
@@ -18,6 +17,11 @@ function pushElement(text){
 }
 
 button.addEventListener('click', function(e){
-    pushElement(input.value)
-    input.value = ''
+    if(input.value.length >= 1 ){
+        pushElement(input.value)
+        input.value = ''
+    } else {
+        alert('Input field cannot be empty')
+    }
+    
 })
