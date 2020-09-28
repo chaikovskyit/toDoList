@@ -15,6 +15,7 @@ body {
     border-radius: 5px;
     box-shadow: 4px 4px 4px 4px rgb(36, 51, 38);
 }
+
 .tasks{
     display: flex;
     justify-content: space-between;
@@ -31,6 +32,15 @@ body {
     padding: 3px;
     padding-left: 5px;
     padding-right: 5px;
-    
-}
 
+}
+.input{
+    font-size: 20px;
+    margin-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    outline: none;
+}   
+.btn{
+    font-size: 20px;
+}
