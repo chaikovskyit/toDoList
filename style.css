@@ -20,6 +20,7 @@ body {
     justify-content: space-between;
 }
 .task {
+    display: flex;
     justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -27,5 +28,9 @@ body {
     background-color: grey;
     width: 80%;
     text-align: left;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
 }
 
