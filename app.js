@@ -5,11 +5,15 @@ const blockList = document.querySelector('.tasks')
 function pushElement(text){
     const newElement = document.createElement('li')
     const deleteBatton = document.createElement('button')
+    newElement.className = 'task'
 
     deleteBatton.textContent = 'delete'
+    deleteBatton.className = 'del'
     deleteBatton.addEventListener('click', function(e){
         blockList.removeChild(newElement)
     })
+
+    // newElement.addEventListener('click', )
 
     newElement.textContent = text
     newElement.appendChild(deleteBatton)
